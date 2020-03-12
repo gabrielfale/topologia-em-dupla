@@ -1,0 +1,21 @@
+* Check list
+1° Configuração de IP, Mascara e Gateway nos PC
+2° Idendificações nos Switchs e no Router
+3° Configuração dos Switch
+- Nome
+- Usuários e senhas no modo Enable, Console e VTY
+- IP
+- Mascara
+- Gateway
+- Protocolo SSH
+- Encriptação das Senhas
+- Banner
+4° Configuração do Router
+- Usuários e senhas no modo Enable, Console e VTY
+- IP nas Interfacer Gigabit 0/0 e 0/1
+- Protocolo SSH
+- Encriptação das Senhas
+- Banner
+
+Teste Final
+Executamos o protocolo ARP e ICMP em todos os dispositivos das redes 1 e 2 para validar.

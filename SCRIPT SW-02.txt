@@ -1,0 +1,26 @@
+enable
+configure terminal
+hostname SW-02
+service password-encryption
+banner motd "ACESSO APENAS PARA PESSOAS AUTORIZADAS"
+no ip domain-lookup
+username gabrielferreira privilege 15 secret batata*0
+ip domain-name 1rede.local
+enable secret GABRIEL*enable
+crypto key generate rsa general-keys modulus 1024
+ip default-gateway 172.16.0.1
+line console 0
+password GABRIEL*console
+login local
+exit
+line vty 0 15
+password GABRIEL*vty
+transport input ssh
+login local
+exit
+interface vlan 1
+ip address 172.16.255.254 255.255.0.0
+no shutdown
+exit
+end
+wr
